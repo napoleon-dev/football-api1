@@ -4,7 +4,7 @@ import http.client
 import json
 
 connection = http.client.HTTPConnection('api.football-data.org')
-headers = {'X-Auth-Token': '0f1a9a754b4545169f610a6b5a5407e1',
+headers = {'X-Auth-Token': '',
            'X-Response-Control': 'minified'}
 connection.request('GET', '/v1/teams/66/fixtures?timeFrame=p318', None,
                    headers)
